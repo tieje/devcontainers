@@ -1,0 +1,35 @@
+{
+    "id": "slidev",
+    "version": "0.1.0",
+    "name": "slidev",
+    "description": "An environment for developing multiple slidev projects.",
+    "documentationURL": "https://github.com/slidevjs/container",
+    "licenseURL": "https://github.com/slidevjs/container/blob/main/LICENSE",
+    "options": {
+        "imageVariant": {
+            "type": "string",
+            "description": "Choose your Bun version:",
+            "proposals": [
+                "debian",
+                "slim",
+                "alpine",
+                "distroless"
+            ],
+            "default": "debian"
+        }
+    },
+    "platforms": [
+        "Bun",
+        "Slidev",
+        "TypeScript"
+    ],
+    "publisher": "Thomas Francis",
+    "keywords": [
+        "slidev",
+        "powerpoint",
+        "markdown",
+        "keynote",
+        "presentation",
+        "ideas"
+    ]
+}

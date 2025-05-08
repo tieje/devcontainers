@@ -1,0 +1,23 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/tangramor/slidev_docker/blob/master/README.md
+{
+    "name": "slidev",
+    "dockerFile": "Dockerfile",
+    // Configure tool-specific properties.
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            // Add the IDs of extensions you want installed when the container is created.
+            "extensions": [
+                "oven.bun-vscode",
+                "antfu.slidev"
+            ]
+        }
+    },
+    // Solves vite hosting issue https://github.com/microsoft/vscode-remote-release/issues/7029#issuecomment-2635221267
+    "runArgs": [
+        "--sysctl",
+        "net.ipv6.conf.all.disable_ipv6=1"
+    ],
+    "postCreateCommand": "echo -e '\\033[0;31mI recommend to creating all slidev projects in this environment using \\033[0;31mbun create slidev'"
+}
